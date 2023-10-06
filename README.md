@@ -12,6 +12,6 @@
 
 6. ใช้คำสั่ง npm start หรือ docker run -p 80:3333 -v /home/ponggun/docker_image_nodjs/uploads:/app/uploads ponggun/nodeupload
 
-7.เลือกรูปภาพที่จะอัพโหลด หรือ ใส่link url ของรูปภาพ 
+7.เลือกรูปภาพที่จะอัพโหลด หรือ ใส่link url ของรูปภาพ  แล้วกด upload image
 
 ปล.หากรูปภาพมีขนาดใหญ่เกิดไปหรือมีลิขสิทธ์ อาจจะทำให้ตัวเว็ปไม่สามารถแสดงโชว์ได้ ขอบคุณค่ะ
