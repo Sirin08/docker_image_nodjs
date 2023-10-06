@@ -1,21 +1,17 @@
-# Upload image files Node, Express and Multer.js
+1. ใช้คำสั่ง git clone https://github.com/Sirin08/docker_image_nodjs.git
 
-This example allows for uploading a file by:
-- selecting a file on your machine
-- entering a URL
-- saving to an uploads folder on your server
-- renaming the file with a datestamp
-- limits file size to 1.5 MB (can be changed)
+2.cd เข้าโฟลเดอร์  docker_image_nodjs จากนั้นเปิด code .
 
-## Start
-Type these commands in the terminal inside the folder where you cloned the repository
-- `npm install` to install node modules
-- `nodemon` if not installed `npm install nodemon -g`
-- `node app.js` or `npm start`
-- `open http://localhost:3333/`
+3.สร้างfolder เพิ่มเข้ามา ชื่อว่า uploads
 
-## Resources
-- https://github.com/expressjs/multer
+4.ใช้คำสั่ง npm install  และใช้คำสั่ง npm install nodemon -g
 
----
-<img src='example.gif'/>
+5.เปิด docker และใช้คำสั่ง docker build -t ponggun/nodeupload . ในterminal vs
+
+*หาก build ไม่ได้ ให้ใช้คำสั่ง npm install และตามด้วยคำสั่ง  docker build -t ponggun/nodeupload . อีกรอบ
+
+6. ใช้คำสั่ง npm start หรือ docker run -p 80:3333 -v /home/ponggun/docker_image_nodjs/uploads:/app/uploads ponggun/nodeupload
+
+7.เลือกรูปภาพที่จะอัพโหลด หรือ ใส่link url ของรูปภาพ 
+
+ปล.หากรูปภาพมีขนาดใหญ่เกิดไปหรือมีลิขสิทธ์ อาจจะทำให้ตัวเว็ปไม่สามารถแสดงโชว์ได้ ขอบคุณค่ะ
